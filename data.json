@@ -1,0 +1,93 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Public API Requests",
+            "description": "In JavaScript, filter search results with a simple public API request utilizing the 'fetch' API. When the request is made a 'Promise' is returned using 'then()', and the data is manipulated and parsed into JSON. The JSON object is then interpolated dynamically into the HTML.",
+            "technologies": [
+                "JavaScript",
+                "Fetch API",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://brandenmorgan.github.io/public_api_request-v1/",
+            "github_link": "https://github.com/BrandenMorgan/public_api_request-v1",
+            "image_urls": [
+                "/static/images/public_api_request_main.png",
+                "/static/images/public_api_request_project1.png",
+                "/static/images/public_api_request_project2.png"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "List Pagination and Filtering",
+            "description": "Using unobtrusive JavaScript implement pagination and search bar functionality to filter through 'students' on an existing webpage.",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://brandenmorgan.github.io/list_pagination_and_filtering-v1/#",
+            "github_link": "https://github.com/BrandenMorgan/list_pagination_and_filtering-v1",
+            "image_urls": [
+                "/static/images/pagination_main.png",
+                "/static/images/pagination_project1.png",
+                "/static/images/pagination_project2.png"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Phrase Hunter",
+            "description": "Built with OOJS principles in 'Vanilla' JavaScript; Guess a phrase by clicking an onscreen keyboard or executing physical keystrokes with 5 chances to guess incorrectly.",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://brandenmorgan.github.io/oop_game-v2/",
+            "github_link": "https://github.com/BrandenMorgan/oop_game-v2",
+            "image_urls": [
+                "/static/images/phrase_hunter_main.png",
+                "/static/images/phrase_hunter_project1.png",
+                "/static/images/phrase_hunter_project2.png",
+                "/static/images/phrase_hunter_project3.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Interactive Form",
+            "description": "Validate form fields and add interactivity with JavaScript",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://brandenmorgan.github.io/interactive-form-v2/",
+            "github_link": "https://github.com/BrandenMorgan/interactive-form-v2",
+            "image_urls": [
+                "/static/images/interactive_form_main.png",
+                "/static/images/interactive_form_project1.png",
+                "/static/images/interactive_form_project2.png",
+                "/static/images/interactive_form_project3.png"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Random Quote Generator",
+            "description": "Display a different quote and update the background color in the browser automatically at regular intervals or every time the user clicks the 'Show another quote' button.",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://brandenmorgan.github.io/a_random_quote_generator-v1/",
+            "github_link": "https://github.com/BrandenMorgan/a_random_quote_generator-v1",
+            "image_urls": [
+                "/static/images/random_quote_main.png",
+                "/static/images/random_quote_project1.png",
+                "/static/images/random_quote_project2.png",
+                "/static/images/random_quote_project3.png"
+            ]
+        }
+    ]
+}
