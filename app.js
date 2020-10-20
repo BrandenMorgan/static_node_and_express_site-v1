@@ -1,37 +1,29 @@
 const express = require("express");
-const data = require("./data.json");
-
 const app = express();
-app.use("/static", express.static("public"));
 
+app.use("/static", express.static("public"));
 app.set("view engine", "pug");
 
-app.get("/", (req, res) => {
-    res.render("index", { data });
-});
+const mainRoutes = require('./routes');
 
-app.get("/about", (req, res) => {
-    res.render("about");
-});
-
-app.get('/project/:id', (req, res) => {
-    res.render('project', {
-        project: data.projects[req.params.id]
-    });
-
-});
+app.use(mainRoutes);
 
 app.use((req, res, next) => {
-    const err = new Error("Oops! This page doesn't exist.");
-    err.status = 404
-    next(err);
+    console.log('404 error handler called');
+    res.status(404).render('not-found')
 });
 
-
 app.use((err, req, res, next) => {
-    res.locals.error = err;
-    res.status(err.status);
-    res.render('error');
+
+    if (err) {
+        console.log('Global error handler called', err);
+    }
+    if (err.status === 404) {
+        res.status(404).render('not-found', { err })
+    } else {
+        err.message = err.message || `Oops! It looks like something went wrong on the server`;
+        res.status(err.status || 500).render('error', { err });
+    }
 });
 
 app.listen(3000, () => {

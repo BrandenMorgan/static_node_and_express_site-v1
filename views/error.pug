@@ -1,4 +1,12 @@
+extends layout
+
 block content
-  h1= `${error.message} - Status: ${error.status}`
-  a(href='/') Go Home
-  pre= error.stack
+  h1= `Server Error`
+  h2= `Error status code: ${err.status} - Server Error`
+  p.error-p= `Error: ${err.message}`
+
+  a.home(href=`/`) Home
+
+  div.not-found-stack
+    hr
+    pre #{err.stack}
