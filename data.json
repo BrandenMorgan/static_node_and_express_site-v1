@@ -3,7 +3,7 @@
         {
             "id": 0,
             "project_name": "Public API Requests",
-            "description": "In JavaScript, filter search results with a simple public API request utilizing the 'fetch' API. When the request is made a 'Promise' is returned using 'then()', and the data is manipulated and parsed into JSON. The JSON object is then interpolated dynamically into the HTML.",
+            "description": "In JavaScript, filter search results of a simple public API request utilizing the 'fetch' API. When the request is made a 'Promise' is returned using 'then()', and the data is manipulated and parsed into JSON. The JSON object is then interpolated dynamically into the HTML.",
             "technologies": [
                 "JavaScript",
                 "Fetch API",
@@ -21,7 +21,7 @@
         {
             "id": 1,
             "project_name": "List Pagination and Filtering",
-            "description": "Using unobtrusive JavaScript implement pagination and search bar functionality to filter through 'students' on an existing webpage.",
+            "description": "Using unobtrusive JavaScript implement search bar functionality and append pagination links depending on search results while filtering through 'students' on an existing webpage.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -56,7 +56,7 @@
         {
             "id": 3,
             "project_name": "Interactive Form",
-            "description": "Validate form fields and add interactivity with JavaScript",
+            "description": "Validate form fields, add interactivity and display error messages in real time until user input is fully valid with JavaScript",
             "technologies": [
                 "JavaScript",
                 "HTML",
