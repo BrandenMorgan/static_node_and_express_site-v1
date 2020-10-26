@@ -11,11 +11,13 @@ app.set("view engine", "pug");
 const mainRoutes = require('./routes');
 app.use(mainRoutes);
 
-// 404 error handler for non existent routes "/not-a-route" or "/project/not-a-route"
+// 404 error handler for non existent routes "/not-a-route"
 app.use((req, res, next) => {
     console.log('404 error handler called');
-    // Render the 'not-found' view
-    res.status(404).render('not-found');
+    const err = new Error();
+    err.status = 404;
+    err.message = `Oops looks like this page doesn't exist.`
+    next(err);
 });
 
 // Global error handler

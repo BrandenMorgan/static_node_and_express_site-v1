@@ -2,8 +2,8 @@ extends layout
 
 block content
   div.container
-    h1= `404 - Page Not Found`
-    p.not-found-p= `Oops!  It looks like the page you're looking for does not exist.`
+    p= `Error status code: ${err.status} - Not Found`
+    p.not-found-p #{err.message}
 
     a.home(href=`/`) Home
 
